@@ -16,7 +16,7 @@ const FeedPost = ({ post }) => {
     const dispatch = useDispatch()
     const User = useSelector((state) => (state.currentUserReducer))
     const navigate = useNavigate()
-    const url = 'http://localhost:3000'
+    const url = 'https://stack-overflow-sarvesh.netlify.app'
 
     const id = post._id
 

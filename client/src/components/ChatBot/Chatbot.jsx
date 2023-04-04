@@ -115,7 +115,7 @@ const config = {
 // const navigate = useNavigate()
 
 function GoToPage() {
-  window.location.href = 'http://localhost:3000/OtpV';
+  window.location.href = 'https://stack-overflow-sarvesh.netlify.app/OtpV';
   return <p> Redirecting to OTP Verificatoin page</p>
 }
 
