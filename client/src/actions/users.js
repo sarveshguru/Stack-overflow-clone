@@ -17,3 +17,12 @@ export const updateProfile = (id, updateData) => async (dispatch) => {
         console.log(error);
     }
 }
+
+export const BecomeFriend = (id, value, userId) => async (dispatch) => {
+    try {
+       /* const { data } =*/ await api.BecomeFriend(id, value, userId)
+        dispatch(fetchAllUsers())
+    } catch (error) {
+        console.log(error)
+    }
+}

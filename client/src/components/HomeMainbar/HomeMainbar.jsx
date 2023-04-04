@@ -7,7 +7,7 @@ import QuestionList from './QuestionList'
 
 const HomeMainbar = () => {
 
-  const user = 1;
+  const user = useSelector((state) => (state.currentUserReducer));
   const navigate = useNavigate()
 
   const questionsList = useSelector(state => state.questionsReducer)
@@ -82,7 +82,7 @@ const HomeMainbar = () => {
     <div className='main-bar'>
       <div className="main-bar-header">
         {
-          location.pathname === '/' ? <h1>Top Questions</h1> : <h1>All Questions</h1>
+          location.pathname === '/' ? <h1 className='home-head-ing'>Top Questions</h1> : <h1 className='home-head-ing'>All Questions</h1>
         }
 
         <button onClick={checkAuth} className='ask-btn'>Ask Question</button>
@@ -90,7 +90,7 @@ const HomeMainbar = () => {
       <div>
         {
           questionsList.data === null ?
-            <h1>Loading...</h1> :
+            <h1 className='load-screen'>Loading...</h1> :
             <>
               <p>{questionsList.data.length} question</p>
               <QuestionList questionsList={questionsList.data} />

@@ -15,8 +15,32 @@
     padding-left: 20px;
 }
 
-.user-name p {
+.user-name h1 {
+    margin-top: 5px;
+}
+
+.user-name p,
+.user-info p {
     color: #7e7e7e;
+    margin-bottom: 0%;
+}
+
+.user-info {
+    display: flex;
+    align-items: flex-start;
+    padding-right: 20px;
+    padding-top: 1px;
+}
+
+.user-info h3 {
+    text-align: center;
+    font-weight: 400;
+    margin-right: 3px;
+    font-size: larger;
+}
+
+.user-info p {
+    padding-top: 6px;
 }
 
 .edit-profile-btn {
@@ -31,6 +55,29 @@
 .edit-profile-btn:hover {
     background-color: #f5f9fc;
 }
+
+.remove-frd {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.remove-frd:hover {
+    background-color: #7e7e7e;
+    color: #f5f9fc;
+}
+
+.add-frd {
+    background-color: #66abdf;
+    color: #f5f9fc;
+    border: #0074cc;
+}
+
+.add-frd:hover {
+    background-color: #0074cc;
+    color: #f5f9fc;
+    border: #0074cc;
+}
+
 
 .edit-profile-title {
     padding: 20px 0px;
@@ -66,6 +113,7 @@
     width: 50%;
 }
 
+
 .user-submit-btn {
     padding: 14px 10px;
     background-color: #0a95ff;
@@ -89,3 +137,17 @@
     cursor: pointer;
 }
 
+/* Media Query for Tablets Ipads portrait mode */
+@media only screen and (max-width: 768px) {
+
+    .edit-profile-form label input,
+    .edit-profile-form label textarea {
+        width: calc(100% - 24px);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .user-details-container {
+        display: grid;
+    }
+}

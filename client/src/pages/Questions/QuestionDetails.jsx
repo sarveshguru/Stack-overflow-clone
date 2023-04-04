@@ -24,7 +24,7 @@ const QuestionDetails = () => {
     const User = useSelector((state) => (state.currentUserReducer))
     const location = useLocation()
 
-    const url = 'http://localhost:3000'
+    const url = 'https://stack-overflow-sarvesh.netlify.app/'    //'http://localhost:3000'
 
     const handlePostAns = (e, answerLength) => {
         e.preventDefault()

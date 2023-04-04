@@ -16,18 +16,17 @@ const AskQuestion = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        // dispatch(askQuestion({ questionTitle, questionBody, questionTags, userPosted: User.result.name, userId: User?.result?._id }, navigate))
         if (User === null) {
-            alert('Login or Signup to answer a question')
+            alert('Login or Signup to post a question')
             navigate('/Auth')
-        } else{
+        } else {
             if (questionTitle === '' && questionBody === '' && questionTags === '') {
                 alert('Enter question -title, question-body, question-tags before submitting')
             } else {
                 // console.log({questionTitile, questionBody, questionTags})
                 dispatch(askQuestion({ questionTitle, questionBody, questionTags, userPosted: User.result.name, userId: User?.result?._id }, navigate))
             }
-        }    
+        }
     }
 
     const handleEnter = (e) => {

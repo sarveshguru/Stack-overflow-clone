@@ -6,6 +6,8 @@ import dotenv from "dotenv";
 import userRoutes from './routes/users.js'
 import questionsRoutes from './routes/Quesrions.js'
 import answerRoutes from './routes/Answers.js'
+import postsRoutes from './routes/Posts.js'
+// import subsRoutes from './routes/subs.js'
 
 mongoose.set('strictQuery', false);
 
@@ -26,6 +28,8 @@ app.get('/', (req, res) => {
 app.use('/user', userRoutes)    
 app.use('/questions', questionsRoutes)    
 app.use('/answer', answerRoutes)    
+app.use('/posts', postsRoutes)    
+// app.use('/subs', subsRoutes)    
 
 
 const PORT = process.env.PORT || 5000   

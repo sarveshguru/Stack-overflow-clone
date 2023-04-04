@@ -8,6 +8,9 @@ import AllRoutes from './AllRoutes'
 
 import { fetchAllQuestions } from './actions/question';
 import { fetchAllUsers } from './actions/users';
+import { fetchAllPosts } from './actions/post';
+
+
 
 function App() {
 
@@ -16,6 +19,7 @@ function App() {
   useEffect(() => {
     dispatch(fetchAllQuestions())  
     dispatch(fetchAllUsers())  
+    dispatch(fetchAllPosts())  
   }, [dispatch])
 
   return (

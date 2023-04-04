@@ -16,6 +16,7 @@ const Tags = () => {
                 <p className="tags-p">A tag is a keyword or label that categorizes your question with other, similar questions.</p>
                 <p className="tags-p">Using the right tags makes it easier for others to find and answer your question.</p>
                 <div className="tags-list-container">
+
                     {
                         tagsList.map((tag, id) => (
                             <TagsList tag={tag} key={id} />

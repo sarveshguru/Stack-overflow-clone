@@ -1,17 +1,18 @@
-.right-sidebar{
-    float: right;    
+.right-sidebar {
+    float: right;
     width: 300px;
     margin: 40px 0px 15px 24px;
     font-size: 15px;
 }
 
-.widget{
+
+.widget {
     margin-top: 10px;
     box-shadow: 3px 3px 10px rgb(0 0 0 / 5%),
-    -3px -3px 10px rgb(0 0 0 / 5%);
+        -3px -3px 10px rgb(0 0 0 / 5%);
 }
 
-.widget h4{
+.widget h4 {
     background-color: #fbf3d5;
     margin: 0%;
     padding: 15px;
@@ -19,31 +20,31 @@
     font-size: 13px;
 }
 
-.right-sidebar-div-1{
+.right-sidebar-div-1 {
     background-color: #fdf7e2;
     padding: 15px;
     border: solid 1px #f1e5bc;
 }
 
-.right-sidebar-div-1 .right-sidebar-div-2{
+.right-sidebar-div-1 .right-sidebar-div-2 {
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
 }
 
-.right-sidebar-div-1 .right-sidebar-div-2 p{
+.right-sidebar-div-1 .right-sidebar-div-2 p {
     padding-left: 10px;
     margin-top: 0%;
     font-size: 13px;
 }
 
-.widget-tags{
+.widget-tags {
     margin-top: 40px;
     box-shadow: 3px 3px 10px rgb(0 0 0 / 5%),
-    -3px -3px 10px rgb(0 0 0 / 5%);
+        -3px -3px 10px rgb(0 0 0 / 5%);
 }
 
-.widget-tags h3{
+.widget-tags h3 {
     margin: 0%;
     padding: 15px;
     background-color: #f8f9f9;
@@ -51,7 +52,7 @@
     font-size: 13px;
 }
 
-.widget-tags-div{
+.widget-tags-div {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -60,10 +61,17 @@
     padding: 10px;
 }
 
-.widget-tags-div p{
+.widget-tags-div p {
     padding: 5px;
     background-color: #e1ecf4;
     color: #39739d;
     border-radius: 2px;
     font-size: 13px;
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 0px) and (max-width: 1010px) {
+    .right-sidebar {
+        display: none;
+    }
 }

@@ -1,0 +1,91 @@
+/* FeedPost.jsx */
+
+.share-card {
+    max-width: 500px;
+    height: max-content;
+    margin: 25px auto;
+    border: 1px solid #bbbbbb3f;
+    background-color: #bbbbbb34;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+}
+
+.share-card-container {
+    padding: 35px;
+    box-shadow: 3px 3px 10px rgb(0 0 0 / 10%),
+    -3px -3px 10px rgb(0 0 0 / 10%);
+}
+
+/*create post*/
+
+.create-post{
+    height:68.4vh;
+    padding-top: 180px;
+}
+
+.ask-caption textarea{
+    height: 200px;
+    padding: 15px;
+    border: solid 1px #0000003e;
+    font-family: 'Roboto', sans-serif;
+    width: calc(100% - 23px);
+    resize: vertical;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.box-input{
+    margin-top: 15px;
+    border-top: 1px solid #0000003e;
+    padding-top: 20px;
+}
+
+.image-upload{
+    /* border: 1px solid red; */
+    float: left;
+    width: calc(100% - 395px);
+    display: flex;
+}
+
+.image-upload>input {
+    display: none;
+}
+
+.image-upload img{
+    width: 100%;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.image-upload img:hover{
+    opacity: 1;
+}
+
+.post-btn{
+    float:right;
+    width: 70px;
+    padding: 10px;
+    background-color: #009dff;
+    border: #009dff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.post-btn:hover{
+    background-color: #0086d8;
+}
+
+.post-cancel-btn {
+    float: right;
+    padding: 14px 10px 14px 10px;
+    color: #0a95ff;
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+}

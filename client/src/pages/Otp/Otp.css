@@ -1,0 +1,74 @@
+.otp-main-container{
+    height: 100vh;
+    padding-top: 17%;
+    background-color: #ef8236;
+}
+
+
+.otp-main-container form{
+    max-width: 500px;
+    min-width: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.otp-main-container h4{
+    margin: 0%;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+}
+
+.otp-main-container form .fa-phone{
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.otp-main-container form p{
+    margin: 0% auto;    
+    padding: 2%;
+    width: 20%;
+    font-size: 70px;
+    color: #ef8236;
+    border-radius: 50%;
+    background-color: #fff ;
+}
+
+.otp-main-container form input, .btn-no-otp{
+    margin: 0% auto;
+    padding: 8px;
+    border: none;
+    display: block;
+}
+
+.otp-main-container form input {
+    margin-top: 2%;
+    width: 230px;
+    outline: none;
+}
+
+.otp-main-container form input::-webkit-outer-spin-button,
+.otp-main-container form input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.otp-main-container form .btn-no-otp {
+    margin-top: 3%;
+    width: 246px;
+    background-color: #C66012;
+    transition: 0.3s;
+    color: #fff;
+}
+
+.otp-main-container form .btn-no-otp:hover {
+    background-color: #de6203;
+}
+
+/*for tablet*/
+@media only screen and (max-width: 768px) {
+    .otp-main-container {
+        padding-top: 32%;
+    }
+}

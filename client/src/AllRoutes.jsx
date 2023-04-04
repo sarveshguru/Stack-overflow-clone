@@ -9,6 +9,12 @@ import DisplayQuestion from './pages/Questions/DisplayQuestion'
 import Tags from './pages/Tags/Tags'
 import Users from './pages/Users/Users'
 import UserProfile from './pages/UserProfile/UserProfile'
+import Community from './pages/Community/Community'
+import CreatePost from './pages/CreatePost/CreatePost'
+import FeedPost from './components/CommunityNavbar/FeedPost'
+import ArticalPlan from './pages/ArticalPlan/ArticalPlan'
+import Otp from './pages/Otp/Otp'
+
 
 const AllRoutes = () => {
   return (
@@ -21,6 +27,11 @@ const AllRoutes = () => {
       <Route path='/Tags/' element={<Tags />} />
       <Route path='/Users/' element={<Users />} />
       <Route path='/Users/:id' element={<UserProfile />} />
+      <Route path='/Community/' element={<Community />} />
+      <Route path='/CreatePost/' element={<CreatePost />} />
+      <Route path='/FeedPost/:id' element={<FeedPost />} />
+      <Route path='/articalPlans' element={<ArticalPlan />} />
+      <Route path='/OtpV' element={<Otp />} />
     </Routes>
   )
 }

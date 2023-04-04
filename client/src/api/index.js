@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API = axios.create({ baseURL: 'http://localhost:5000' })
+const API = axios.create({ baseURL: 'http://localhost:5000' }) //'https://stack-overflow-clone-eke8.onrender.com'    //
 
 API.interceptors.request.use((req) => {
     if (localStorage.getItem('Profile')) {
@@ -22,3 +22,9 @@ export const deleteAnswer = (id, answerId, noOfAnswers) => API.patch(`/answer/de
 
 export const fetchAllUsers = () => API.get('/user/getAllUsers')
 export const updateProfile = (id, updateData) => API.patch(`/user/update/${id}`, updateData)
+export const BecomeFriend = (id, value, userId) => API.patch(`/user/beFriends/${id}`, {value, userId});
+
+export const sharePost = (postData) => API.post('/posts/Create', postData);
+export const getsAllPost = () => API.get('/posts/gets');
+export const postLiked = (id, value, userId) => API.patch(`/posts/likes/${id}`, {value, userId});
+

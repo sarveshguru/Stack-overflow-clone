@@ -4,7 +4,8 @@
     margin: 25px 0px;
     padding: 0px;
 }
- 
+
+
 .question-details-container{
     margin-bottom: 20px;
     padding-bottom: 20px;
@@ -128,4 +129,19 @@
     font-size: 14px;
     line-height: 18px;
     white-space: pre-line;
+}
+
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 600px) and (max-width: 1010px) {
+    .question-details-page {
+        width:  calc(100% - 24px);
+    }
+}
+
+@media (min-width: 0px) and (max-width: 599px) {
+    .question-details-page{
+        width: 100%;
+        
+    }
 }

@@ -28,3 +28,9 @@
 .user-profile-link h5 {
     margin: 0px 10px;
 }
+
+@media (min-width: 0px) and (max-width: 350px) {
+    .User-head{
+        font-size: 20px;
+    }
+  }
