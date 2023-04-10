@@ -79,6 +79,12 @@ const Navbar = () => {
     }
   };
 
+  const handleDelayedMouseLeave = () => {
+    setTimeout(() => {
+      handleMouseLeave();
+    }, 5000);
+  };
+
   const handleMouseLeave = () => {
     if (window.innerWidth <= 768 && searchQuery === '') {
       setShowSearchInput(false);
@@ -103,16 +109,15 @@ const Navbar = () => {
         <Link to='/' className='nav-item nav-btn'>For Team</Link>
         {
           location.pathname === '/Community' && (
-            <Link to='/CreatePost' className='nav-item nav-btn'><Icon icon="ion:create-outline" className='icon-post'/></Link>
+            <Link to='/CreatePost' className='nav-item nav-btn'><Icon icon="ion:create-outline" className='icon-post' /></Link>
           )
         }
 
-        <img src={search} alt="search" width="18px" className='search-icon-H' onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave} />
+        <img src={search} alt="search" width="18px" className='search-icon-H' onClick={handleMouseEnter}
+        />
 
-        <form onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave} style={{ display: showSearchInput ? 'block' : 'none' }}>
-          <input type="text" placeholder='Search...' value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
+        <form onMouseLeave={handleDelayedMouseLeave} style={{ display: showSearchInput ? 'block' : 'none' }}>
+          <input type="text" placeholder='Search...' value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} onMouseEnter={handleMouseEnter} />
           <img src={search} alt="search" width="18px" className='search-icon' />
           {
             searchQuery !== '' && (
