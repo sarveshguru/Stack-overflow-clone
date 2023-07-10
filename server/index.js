@@ -32,7 +32,7 @@ app.use('/posts', postsRoutes)
 // app.use('/subs', subsRoutes)    
 
 
-const PORT = PORT || 5000
+const PORT = process.env.PORT || 5000
 
 
 
