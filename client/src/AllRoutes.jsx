@@ -13,7 +13,7 @@ import Community from './pages/Community/Community'
 import CreatePost from './pages/CreatePost/CreatePost'
 import FeedPost from './components/CommunityNavbar/FeedPost'
 import ArticalPlan from './pages/ArticalPlan/ArticalPlan'
-import Otp from './pages/Otp/Otp'
+// import Otp from './pages/Otp/Otp'
 
 
 const AllRoutes = () => {
@@ -31,7 +31,7 @@ const AllRoutes = () => {
       <Route path='/CreatePost/' element={<CreatePost />} />
       <Route path='/FeedPost/:id' element={<FeedPost />} />
       <Route path='/articalPlans' element={<ArticalPlan />} />
-      <Route path='/OtpV' element={<Otp />} />
+      {/* <Route path='/OtpV' element={<Otp />} /> */}
     </Routes>
   )
 }
