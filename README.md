@@ -42,13 +42,13 @@ The **Stack Overflow Clone** offers a familiar yet enhanced Q&A platform for use
 
 ### 📱 Responsive Design
 
-| Desktop	Tablet Mobile |
+| Desktop Tablet Mobile |
 |:------------------:|
 | ![SOC](https://github.com/sarveshguru/Stack-overflow-clone/assets/72163818/007e4302-9734-4777-b7f0-d3c0d4ed9a34) |
 
 ### 🌐 Live Demo
 
-Check out the live demo: [Admin Dashboard](https://stack-overflow-sarvesh.netlify.app/)
+Check out the live demo: [Stack-overflow-clone](https://stack-overflow-sarvesh.netlify.app/)
 
 ### 🚀 Getting Started
 
