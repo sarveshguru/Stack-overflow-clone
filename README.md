@@ -1,4 +1,4 @@
-# Admin Dashboard
+# Stack Overflow Clone
 
 ![Website](https://img.shields.io/website?url=https://stack-overflow-sarvesh.netlify.app/)
 ![Last Commit](https://img.shields.io/github/last-commit/sarveshguru/Stack-Overflow-Clone) 
