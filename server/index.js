@@ -18,7 +18,22 @@ app.use(express.json({ limit: "30mb", extended: true }))
 app.use(express.urlencoded({ limit: "30mb", extended: true }))
 app.use(cors());
 
+// prevent from sleeping server by render
+const url = `https://stack-overflow-clone-eke8.onrender.com`;
+const interval = 30000;
 
+function reloadWebsite() {
+  axios
+    .get(url)
+    .then((response) => {
+      console.log("website reloded");
+    })
+    .catch((error) => {
+      console.error(`Error : ${error.message}`);
+    });
+}
+
+setInterval(reloadWebsite, interval);
 
 app.get('/', (req, res) => {
     res.send("This is a stack overflow clone API")
