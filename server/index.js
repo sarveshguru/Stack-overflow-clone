@@ -2,6 +2,7 @@ import express from 'express'
 import mongoose from 'mongoose'
 import cors from 'cors'
 import dotenv from "dotenv";
+import axios from "axios";
 
 import userRoutes from './routes/users.js'
 import questionsRoutes from './routes/Quesrions.js'
