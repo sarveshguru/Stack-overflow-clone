@@ -85,6 +85,6 @@ To get started with the project, follow these steps:
 ### 🧑‍💻 Author & Contact
 
 - **Author**: [Sarvesh Choudhary](https://github.com/sarveshguru)
-- **LinkedIn**: [Sarvesh Choudhary](https://www.linkedin.com/in/your-profile)
+- **LinkedIn**: [Sarvesh Choudhary](https://www.linkedin.com/in/sarvesh-choudhary-7571a6126)
 - **Portfolio**: [My Portfolio Website](https://sarvesh-choudhary-portfolio.netlify.app)
 - **Email**: [E-mail](mailto:csarvesh288@gmail.com)
